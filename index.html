@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Test01</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    
+</head>
+<body>
+    <section >
+        <div class="head">
+            <div class="textarea">
+                <div>ROCK</div>
+                <div>PAPER</div>
+                <div>SCISSORS</div>
+            </div>
+        
+            <div class="board">
+                <div class="compSc">Computer Score
+                    <p class="c-count">0</p>
+                </div>
+                <div class="yourSc">Your<br>Score
+                    <p class="y-count">0</p>
+                </div>
+            </div>
+        </div>
+       <div class="hand">
+        <div class="triangle"></div>
+        <img src="/rock.png" alt="rockimg" class="rock" onclick="pickUserHand('rock')">
+        <img src="/scissor.png" alt="scissorimg" class="scissor" onclick="pickUserHand('scissor')">
+        <img src="/paper.png" alt="paperimg" class="paper"onclick="pickUserHand('paper')">
+       </div>
+       
+       <div class="middle">
+        <div class="contest">
+            <div class="userhand">
+                <h1>YOU PICKED</h1>
+                <div class="handimagecontainer">
+                    <img src="/assets/Rock.png" alt="" id="userpickimage">
+                </div>
+            </div>
+            <div class="refree">
+                <div class="decision"><h1>you win</h1></div>
+                <div class="replay" onclick="replay()">PLAY AGAIN</div>
+            </div>
+            <div class="computerhand">
+                <h1>COMPUTER PICKED</h1>
+                <div class="handimagecontainer">
+                    <img src="/assets/Paper.png" alt="" id="computerpickimage">
+                </div>
+            </div>
+           
+            <div class="next" onclick="nextBtn()">NEXT</div>
+           </div>
+       </div>
+       <button id="rule" onclick="rule()">RULES</button>
+       
+       <div class="rulebox">
+        <div class="followRules">
+            <h1>GAME RULES</h1>
+            <ul>
+                <li>Rock beats scissors,scissor beats paper,and paper beats rock.</li>
+                <li>Agree ahead of time whether you'll count off "rock, paper, scissor, shoot"or just "rock, paper, scissors".</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+           </div>
+           <div class="crossimg" onclick="crossBtn()"><img src="/X.png" alt="" width="30px" height="30"></div>   
+       </div>
+       <button id="rule" onclick="rule()">RULES</button>
+       
+
+       <div class="hurraypage">
+        <div class="container">
+            <div id="img"><img src="/cup.png" alt="cupimg" width="200px" height="200px"></div>
+            <div><P id="para1">HURRY!!</P>
+            <p id="para2">YOU WON THE GAME</p>
+            </div>
+            <div><div class="replay" onclick="replay()">PLAY AGAIN</div></div> 
+        </div>
+        <div id="rule" onclick="rule()">RULES</div>
+     </div>
+
+    </section>
+    
+    
+</body>
+</html>
